@@ -24,8 +24,12 @@ Microservices Fundementals
 		2. Determine domains
 		3. Break services
 		4. Detect Atomic domains.
-		5. Design an API layer                                                         
-			just a proxy                                   
+		5. Design an API layer
+			API types
+				Outbound edge services (offers)
+				Inbound/abstraction services 
+					when interacting with 3rd parties.                                                         
+			Endpoints are just a proxy                                   
 				no data transformation
 				no business logic.
 		6. Design a unified logging strategy.
@@ -36,15 +40,9 @@ Microservices Fundementals
 		avoid distribution taxes
 			tie related services
 		Design for Ci/CD
-		Design logging and tracing
 		Leverage domain driven design.
 		build using async code. 
-		Standardize stack where possible.
-		Design an API Layer.
-			Outbound edge services (offers)
-			inbound/abstraction services 
-				when interacting with 3rd parties.
-		
+		Standardize stack where possible.		
 	Hybrid Architectures
 		Hierarchical service architecture
 			Prevents circular dependencies.
