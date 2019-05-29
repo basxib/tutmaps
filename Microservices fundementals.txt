@@ -1,0 +1,58 @@
+Microservices Fundementals      
+	Historical Comparison
+		n-tier (monolithic)
+			problems
+				scalability
+				coupleing
+				releasing
+				testing
+			presentation
+			business logic
+			data layer                                                                              
+		SOA
+			web services
+			clients
+			problems
+				
+		Microservices
+			problems
+				network congestion
+		Cloud native architectures
+			12-factor application
+	Design steps
+		1. Investigate architecture
+		2. Determine domains
+		3. Break services
+		4. Detect Atomic domains.
+		5. Design an API layer                                                         
+			just a proxy                                   
+				no data transformation
+				no business logic.
+		6. Design a unified logging strategy.
+				use tracing tokens.                
+			
+	Design Drivers
+		Separation of concerns
+		avoid distribution taxes
+			tie related services
+		Design for Ci/CD
+		Design logging and tracing
+		Leverage domain driven design.
+		build using async code. 
+		Standardize stack where possible.
+		Design an API Layer.
+			Outbound edge services (offers)
+			inbound/abstraction services 
+				when interacting with 3rd parties.
+		
+	Hybrid Architectures
+		Hierarchical service architecture
+			Prevents circular dependencies.
+		Service Based Architecture
+			Unified Data store
+			Services layer.
+			
+		
+					
+			
+		
