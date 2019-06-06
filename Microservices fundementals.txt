@@ -1,24 +1,4 @@
 Microservices Fundementals      
-	Historical Comparison
-		n-tier (monolithic)
-			problems
-				scalability
-				coupleing
-				releasing
-				testing
-			presentation
-			business logic
-			data layer                                                                              
-		SOA
-			web services
-			clients
-			problems
-				
-		Microservices
-			problems
-				network congestion
-		Cloud native architectures
-			12-factor application
 	Design steps
 		1. Investigate architecture
 		2. Determine domains
@@ -42,15 +22,27 @@ Microservices Fundementals
 		Design for Ci/CD
 		Leverage domain driven design.
 		build using async code. 
-		Standardize stack where possible.		
+		Standardize stack where possible.
+		Elastic
+			each service should be able to grow/shrink independent of other services.
+		Isolation of failure
+		loose coupling
+			no service should call another
+			S uses Queues to communicate
+	Best practices
+		No central DB
+		Use correlation ID
+			for Txes across different services.
+		Dedicate a Roll-back service.
+		Create a transaction manager service
+			tells other services when its time for rollback.
+		
+		
+		
+		
 	Hybrid Architectures
 		Hierarchical service architecture
 			Prevents circular dependencies.
 		Service Based Architecture
 			Unified Data store
 			Services layer.
-			
-		
-					
-			
-		
